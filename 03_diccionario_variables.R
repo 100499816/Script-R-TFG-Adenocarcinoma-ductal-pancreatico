@@ -93,7 +93,7 @@ diccionario <- data.frame(
   
   Codificacion = c(
     "Código numérico",
-    "Adenocarcinoma / Adenocarcinoma mucinoso / Cistoadenocarcinoma / TNE",
+    "Adenocarcinoma ductal/ Adenocarcinoma mucinoso / Cistoadenocarcinoma / TNE",
     "Cabeza / cuerpo / cola / múltiples",
     "Hombre / mujer",
     "Formato fecha",
