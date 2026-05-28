@@ -67,7 +67,6 @@ datos_cox_modelo <- datos_cox %>%
     edad,
     metastasis,
     cirugia,
-    sexo,
     ca_cat,
     tam_cat
   )
@@ -80,7 +79,6 @@ tabla_cox_uni <- tbl_uvregression(
       edad,
       metastasis,
       cirugia,
-      sexo,
       ca_cat,
       tam_cat
     ),
