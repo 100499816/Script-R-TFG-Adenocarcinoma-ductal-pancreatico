@@ -1,4 +1,4 @@
-#TFG: Análisis de supervivencia y factores pronósticos en pacientes con adenocarcinoma ductal pancreático: estudio retrospectivo de cohorte hospitalaria
+# TFG: Análisis de supervivencia y factores pronósticos en pacientes con adenocarcinoma ductal pancreático: estudio retrospectivo de cohorte hospitalaria
 
 Análisis reproducible en R aplicado a una cohorte hospitalaria de pacientes con adenocarcinoma ductal pancreático.
 
