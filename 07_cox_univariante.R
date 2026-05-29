@@ -15,7 +15,7 @@ datos_cox <- datos_surv %>%
     
     ca_cat = factor(ca_cat, levels = c("≤37","38–500",">500")),
     
-    # 🔹 TAMAÑO TUMORAL
+    # TAMAÑO TUMORAL
     tam_cat = case_when(
       tamano_tumoral_al_dx_por_tc_diametro_mayor_en_cm <= 2 ~ "≤2 cm",
       tamano_tumoral_al_dx_por_tc_diametro_mayor_en_cm > 2 ~ ">2 cm"
@@ -58,18 +58,7 @@ nrow(datos_cox_principal)
 
 #-------------------------------------------
 
-# COX UNIVARIANTE (Con tamaño tumoral al dx-muestra reducida)
-
-datos_cox_modelo <- datos_cox %>%
-  drop_na(
-    tiempo,
-    evento,
-    edad,
-    metastasis,
-    cirugia,
-    ca_cat,
-    tam_cat
-  )
+# Tabla COX univariante (con tam_cat-reducción de muestra)
 
 tabla_cox_uni <- tbl_uvregression(
   datos_cox_modelo %>%
@@ -79,6 +68,7 @@ tabla_cox_uni <- tbl_uvregression(
       edad,
       metastasis,
       cirugia,
+      sexo,
       ca_cat,
       tam_cat
     ),
