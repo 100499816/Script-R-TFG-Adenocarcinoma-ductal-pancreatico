@@ -66,7 +66,7 @@ ggplot(
     x = NULL
   ) +
   
-  theme_classic(base_size = 10) +
+  theme_classic(base_size = 9) +
   
   theme(
     plot.title = element_text(face = "bold", hjust = 0.5),
@@ -462,10 +462,3 @@ tabla_qx %>%
     notation = "none"
   )
 
-
-
-#ASIMETRÍA
-skewness(datos$ca_19_9_al_dx, na.rm = TRUE)
-skewness(datos$tamano_tumoral_al_dx_por_tc_diametro_mayor_en_cm, na.rm = TRUE)
-boxplot(datos$ca_19_9_al_dx, main="CA 19-9")
-boxplot(datos$tamano_tumoral_al_dx_por_tc_diametro_mayor_en_cm, main="Tamaño tumoral")
