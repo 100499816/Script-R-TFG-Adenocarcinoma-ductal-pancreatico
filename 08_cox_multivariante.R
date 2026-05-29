@@ -1,4 +1,3 @@
-
 # COX MULTIVARIANTE (N=125. Muestra completa)
 
 datos_cox_multi <- datos_surv %>%
@@ -35,7 +34,7 @@ tabla_cox_multi
 nrow(datos_cox_multi)
 
 
-
+#-------------------------------------------------------------
 #Análisis de sensibilidad (con Sexo)
 
 cox_sensibilidad <- coxph(
@@ -53,3 +52,5 @@ tabla_cox_sensibilidad <- tbl_regression(
   bold_labels()
 
 tabla_cox_sensibilidad
+
+
