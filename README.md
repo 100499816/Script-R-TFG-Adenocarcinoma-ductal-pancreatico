@@ -5,9 +5,10 @@ Análisis reproducible en R aplicado a una cohorte hospitalaria de pacientes con
 Contenido:
 
 - Limpieza y depuración de datos clínicos
-- Análisis descriptivo de las variables
+- Diccionario de variables incluidas en el estudio
 - Definición del evento y censura para el análisis de supervivencia
 - Construcción de la cohorte para análisis de supervivencia
+- Análisis descriptivo de las variables
 - Curvas de supervivencia Kaplan-Meier. Y comparación entre grupos mediante test log-rank
 - Análisis de supervivencia mediante modelos de Cox univariantes y multivariantes.
 - Diagnóstico del supuesto de riesgos proporcionales
